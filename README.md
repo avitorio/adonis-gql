@@ -254,6 +254,14 @@ Route.get('/graphiql', ctx => Gql.handleUi(ctx))
 | `adonis gql:directive <name>` | Make a new directive to graphql |                                                                                                                                                                        |
 | `adonis gql:middleware <name>` | Make a new middleware to graphql |                                                                                                                                                                        |
 
+## Testing
+In order to run tests with Adonis Vow, you'll need to import the preloaders on your test file:
+
+```
+require('../../start/graphql')
+require('../../start/gqlKernel')
+```
+
 ## Thanks
 
 Thank you very much to the creators of [AdonisJS](https://adonisjs.com/) for creating this wonderful framework.
